@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faBars, faTimes, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faGithub,
@@ -59,7 +59,6 @@ const Portfolio = () => {
     { name: "React.js", level: 90, color: "from-cyan-500 to-blue-500" },
     { name: "Node.js", level: 85, color: "from-green-500 to-emerald-500" },
     { name: "JavaScript", level: 92, color: "from-yellow-500 to-orange-500" },
-    { name: "MongoDB", level: 80, color: "from-green-400 to-teal-500" },
     { name: "CSS/Tailwind", level: 88, color: "from-blue-400 to-indigo-500" },
     { name: "Python", level: 75, color: "from-blue-500 to-purple-500" },
   ];
@@ -97,10 +96,6 @@ const Portfolio = () => {
                   <span className="block h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-cyan-500 to-blue-500 transition-all duration-300"></span>
                 </a>
               ))}
-              <button className="ml-4 px-6 py-2.5 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-0.5 flex items-center gap-2">
-                <FontAwesomeIcon icon={faDownload} />
-                Resume
-              </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -125,12 +120,6 @@ const Portfolio = () => {
                   {item.label}
                 </a>
               ))}
-              <div className="px-6 pt-4">
-                <button className="w-full px-4 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-medium rounded-lg hover:shadow-lg flex items-center justify-center gap-2">
-                  <FontAwesomeIcon icon={faDownload} />
-                  Download Resume
-                </button>
-              </div>
             </div>
           )}
         </div>
