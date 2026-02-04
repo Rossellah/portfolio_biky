@@ -152,7 +152,7 @@ const Portfolio = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {["React.js", "Node.js", "MongoDB", "Express", "Python", "AI/ML"].map((tech, idx) => (
+            {["React.js", "Node.js", "Express", "Python", "AI/ML", "TypeScript"].map((tech, idx) => (
               <span
                 key={idx}
                 className="px-4 py-2 bg-gray-800/50 backdrop-blur-sm text-cyan-300 rounded-full text-sm font-medium border border-cyan-500/30 hover:border-cyan-400 transition-colors cursor-pointer hover:bg-gray-800/70"
