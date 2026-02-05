@@ -308,20 +308,42 @@ const Portfolio = () => {
           )}
 
           {/* Webinars - Responsive */}
-          {activeTab === "webinars" && (
-            <div className="text-center py-8 sm:py-12 md:py-16 px-2">
-              <div className="inline-block p-6 sm:p-8 md:p-10 bg-gray-900/70 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-800 max-w-sm sm:max-w-md w-full">
-                <div className="text-4xl sm:text-5xl md:text-6xl mb-4 sm:mb-6">🎥</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 sm:mb-3">Webinars Coming Soon</h3>
-                <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">
-                  I'm currently preparing insightful webinars on modern web development and AI integration.
-                </p>
-                <button className="px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-gray-800 to-gray-900 text-gray-300 rounded-lg hover:text-white hover:bg-gray-800 transition-all duration-300 border border-gray-700 text-sm sm:text-base">
-                  Get Notified
-                </button>
-              </div>
-            </div>
-          )}
+{activeTab === "webinars" && (
+  <div className="text-center py-8 sm:py-12 md:py-16 px-2">
+    <div className="inline-block p-4 sm:p-6 md:p-8 bg-gray-900/70 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-800 max-w-md sm:max-w-lg w-full">
+
+      {/* Certificate Image */}
+      <div className="mb-4 sm:mb-6">
+        <img
+          src="BIKY.png"   // 👈 image from public folder
+          alt="Webinar Certificate"
+          className="w-full h-auto rounded-lg border border-gray-700 shadow-lg"
+        />
+      </div>
+
+      {/* Certificate Details */}
+      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
+        Modern Web Development Webinar
+      </h3>
+
+      <p className="text-gray-400 mb-4 text-sm sm:text-base">
+        Certificate of Participation — covering React, Tailwind CSS, and AI-powered web solutions.
+      </p>
+
+      {/* Optional Action */}
+      <a
+        href="/certificates/webinar-cert.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:shadow-lg transition-all duration-300 text-sm sm:text-base"
+      >
+        View Full Certificate
+      </a>
+
+    </div>
+  </div>
+)}
+
         </section>
 
         {/* Enhanced Responsive Projects Section */}
