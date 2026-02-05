@@ -323,11 +323,11 @@ const Portfolio = () => {
 
       {/* Certificate Details */}
       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
-        Modern Web Development Webinar
+        Cybersecurity
       </h3>
 
       <p className="text-gray-400 mb-4 text-sm sm:text-base">
-        Certificate of Participation — covering React, Tailwind CSS, and AI-powered web solutions.
+        Digital Safety Protocol
       </p>
 
       {/* Optional Action */}
