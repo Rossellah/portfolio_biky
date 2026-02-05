@@ -307,41 +307,39 @@ const Portfolio = () => {
             </div>
           )}
 
-         {/* Webinars - Single Certificate Layout */}
+          {/* Webinars - Responsive */}
 {activeTab === "webinars" && (
-  <div className="flex justify-center">
-    <div 
-      className="group w-full max-w-md mx-auto rounded-2xl border border-gray-700/50 bg-gradient-to-br from-gray-900/70 to-gray-900/80 p-6 shadow-lg transition-all duration-500 cursor-pointer hover:border-indigo-500/30 hover:shadow-2xl hover:shadow-indigo-500/5"
-      onClick={() => {
-        setSelectedCert("lheng-digital-safety.jpg");
-        certificateDialog.open();
-      }}
-    >
-      {/* Certificate image */}
-      <div className="relative rounded-xl overflow-hidden mb-5 border border-gray-700/50 group-hover:border-indigo-500/20 transition-all duration-300">
+  <div className="text-center py-8 sm:py-12 md:py-16 px-2">
+    <div className="inline-block p-4 sm:p-6 md:p-8 bg-gray-900/70 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-800 max-w-md sm:max-w-lg w-full">
+
+      {/* Certificate Image */}
+      <div className="mb-4 sm:mb-6">
         <img
-          src="lheng-digital-safety.jpg"
-          alt="Digital Safety & Cybersecurity Webinar Certificate"
-          className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-          onError={handleCertError}
+          src="BIKY.png"   // 👈 image from public folder
+          alt="Webinar Certificate"
+          className="w-full h-auto rounded-lg border border-gray-700 shadow-lg"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent opacity-70 group-hover:opacity-60 transition-opacity duration-300"></div>
       </div>
-      
-      {/* Certificate details */}
-      <h3 className="text-xl font-bold text-white text-center mb-3 group-hover:text-indigo-300 transition-colors duration-300">
-        Digital Safety & Cybersecurity
+
+      {/* Certificate Details */}
+      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
+        Modern Web Development Webinar
       </h3>
-      <p className="text-gray-400 text-center mb-4 text-sm">
-        Webinar Certificate — Cybersecurity protocols and digital safety measures
+
+      <p className="text-gray-400 mb-4 text-sm sm:text-base">
+        Certificate of Participation — covering React, Tailwind CSS, and AI-powered web solutions.
       </p>
-      
-      {/* Click instruction */}
-      <div className="text-center">
-        <span className="text-xs text-gray-500 group-hover:text-indigo-400 transition-colors duration-300">
-          Click to view full certificate
-        </span>
-      </div>
+
+      {/* Optional Action */}
+      <a
+        href="/certificates/webinar-cert.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:shadow-lg transition-all duration-300 text-sm sm:text-base"
+      >
+        View Full Certificate
+      </a>
+
     </div>
   </div>
 )}
